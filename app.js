@@ -14,6 +14,10 @@ const IMAGE_TRIGGERS = {
     "https://media.discordapp.net/attachments/1467076736201261087/1467170117250187275/truck-anime-truck.gif?ex=69816266&is=698010e6&hm=fd05f065b969f906d6f07f77b05ec3058aad930e10ee078daba57189181312fb&=",
   "!lurk":
     "https://media.discordapp.net/attachments/1467076736201261087/1467170911827263572/cappy-cappy-nft.gif?ex=69816324&is=698011a4&hm=3da3919cebc9d7510db419ba9e13f9329d797d03b489f174fbd4468cdfe48020&=",
+  "!thisisfine":
+    "https://media.discordapp.net/attachments/455357122641788930/1467862066986483895/this-is-ezgif.com-video-to-webp-converter.webp?ex=6981ec94&is=69809b14&hm=32f4dc4c45289eead7eb4fe37284e924d1799b03fcc1de0f1e639b97dd8c4213&=&animated=true&width=550&height=309",
+  "!capybara":
+    "https://images-ext-1.discordapp.net/external/o2zTerhdJ9OpcBcCT0FGOn_-F_looPB3e2gSeC-CU2I/https/media.tenor.com/JbTTyqYpHRMAAAPo/cappy-capybara.mp4",
 };
 
 // ============================
