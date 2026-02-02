@@ -198,7 +198,12 @@ window.addEventListener("onEventReceived", function (obj) {
     if (IMAGE_TRIGGERS[cmd] && !isAllowedToTrigger(data)) return;
   }
 
-  if (ignoredUsers.indexOf(data.nick) !== -1) return;
+  // ----------------------------
+  // Check if user is ignored
+  // ----------------------------
+  const nick = String(data.nick || "").trim().toLowerCase();
+  if (ignoredUsers.includes(nick)) return;
+
 
   // ----------------------------
   // Build message HTML + meta
@@ -298,11 +303,10 @@ window.addEventListener("onWidgetLoad", function (obj) {
     removeSelector = `.message-row:nth-last-child(n+${messagesLimit + 1})`;
   }
 
-  ignoredUsers = fieldData.ignoredUsers
-    .toLowerCase()
-    .replace(" ", "")
-    .split(",");
-});
+  ignoredUsers = String(fieldData.ignoredUsers || "")
+  .split(",")
+  .map((s) => s.trim().toLowerCase())
+  .filter(Boolean);
 
 // ============================
 // EMOTES
