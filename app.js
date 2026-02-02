@@ -307,6 +307,7 @@ window.addEventListener("onWidgetLoad", function (obj) {
   .split(",")
   .map((s) => s.trim().toLowerCase())
   .filter(Boolean);
+  });
 
 // ============================
 // EMOTES
