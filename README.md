@@ -80,6 +80,16 @@ This repo is mainly here to:
 
 ---
 
+
+### Asset hosting note
+
+Some image and GIF assets used by the overlay are currently hosted externally for convenience.
+These assets are referenced via direct URLs in the code.
+
+A future improvement will be to migrate all assets to a stable CDN (for example, GitHub Pages or a dedicated asset host) to further improve reliability and long-term maintainability.
+
+
 ## License
 
 Provided as-is for personal use and experimentation.
+
