@@ -3,17 +3,17 @@
 // ============================
 const IMAGE_TRIGGERS = {
   "!sandwich":
-    "https://media.discordapp.net/attachments/1467076736201261087/1467076781281640479/Derp_1.png?ex=697f1139&is=697dbfb9&hm=6ba48a41c0f3b677f1c4072ab4bfa208530958890976b840745e292a5009a438&=&format=webp&quality=lossless",
+    "https://media.discordapp.net/attachments/1467076736201261087/1467085941150584912/Derp_1_1.png?ex=69811401&is=697fc281&hm=049bf9bf0a9c088a4d264ee7503a082d156d1d113a8cbb39da189b6a3a2640c8&=&format=webp&quality=lossless",
   "!emperor":
-    "https://media.discordapp.net/attachments/1467076736201261087/1467106298934988820/for-the-emperor-hammer-and-bolter-ezgif.com-optimize.gif?ex=697f2cb7&is=697ddb37&hm=bdf7f1d4f37ae0b091be2874f216e1263721c82bd2f1734b51f5527b3cf946e2&=",
+    "https://media.discordapp.net/attachments/1467076736201261087/1467106298934988820/for-the-emperor-hammer-and-bolter-ezgif.com-optimize.gif?ex=698126f7&is=697fd577&hm=41576e9324082babf1f095076db50d9ad46779241b4d57255ae4a4ea8f56008d&=",
   "!redfox":
-    "https://media.discordapp.net/attachments/1467076736201261087/1467133895425392735/1_1.png?ex=697f466a&is=697df4ea&hm=b5c6e100dc3d71446883b48ba0064a9d326477a9735be85cc337f6a6051f9e68&=&format=webp&quality=lossless",
+    "https://media.discordapp.net/attachments/1467076736201261087/1467133895425392735/1_1.png?ex=698140aa&is=697fef2a&hm=e2802a1e1306921af53213709d1b8312f2c563e2b3e3ee7cb91c850058ba284e&=&format=webp&quality=lossless",
   "!hurwey":
     "https://media.discordapp.net/attachments/1467076736201261087/1467149409203650789/1.png?ex=697f54dd&is=697e035d&hm=a1743555192c103104afaedbee6f9e0ec0a1a4e9b79c6522b8bc7f61aa9e5c8b&=&format=webp&quality=lossless&width=550&height=178",
   "!petri":
-    "https://media.discordapp.net/attachments/1467076736201261087/1467170117250187275/truck-anime-truck.gif?ex=697f6826&is=697e16a6&hm=b69548fd6705f1c46e46a1698843395512846e60503c6f16d82508c3694bc9f0&=",
+    "https://media.discordapp.net/attachments/1467076736201261087/1467170117250187275/truck-anime-truck.gif?ex=69816266&is=698010e6&hm=fd05f065b969f906d6f07f77b05ec3058aad930e10ee078daba57189181312fb&=",
   "!lurk":
-    "https://media.discordapp.net/attachments/1467076736201261087/1467170911827263572/cappy-cappy-nft.gif?ex=697f68e4&is=697e1764&hm=61e11e0aaff33cc3d8c040cbe6b12b03b7e1afa3fc4b942783c59734c91737ed&=&width=466&height=350",
+    "https://media.discordapp.net/attachments/1467076736201261087/1467170911827263572/cappy-cappy-nft.gif?ex=69816324&is=698011a4&hm=3da3919cebc9d7510db419ba9e13f9329d797d03b489f174fbd4468cdfe48020&=",
 };
 
 // ============================
