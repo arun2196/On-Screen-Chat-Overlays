@@ -1,0 +1,214 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+*{
+  font-family: '{{fontName}}', sans-serif;
+  color: {{fontColor}};
+  overflow: visible;
+  font-weight: {{fontWeight}};
+  text-shadow: {{textShadow}};
+  text-align: left;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+.main-container{
+  display: {{alignMessages}};
+  height: 98%;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* =========================
+   USERNAME PILL
+   ========================= */
+.user-box{
+  position: absolute;
+  z-index: 99;
+  top: 2%;
+  left: {{sliderNickname}}%;
+
+  background: {{userbackgroundColor}};
+  border-radius: 999px;
+  font-size: {{fontSize}}px;
+  font-weight: 800;
+  padding: 6px 12px;
+
+  box-shadow:
+    0 5px 0 {{outlineColor}},
+    0 10px 18px rgba(0,0,0,0.25);
+}
+
+/* notch */
+.user-box::after{
+  content:"";
+  position:absolute;
+  left: 16px;
+  bottom: -6px;
+  width: 12px;
+  height: 12px;
+  background: {{userbackgroundColor}};
+  transform: rotate(45deg);
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 {{outlineColor}};
+}
+
+/* badges in name pill */
+.user-box .badge{
+  display: {{badgesVisibility}};
+  height: calc({{fontSize}}px - 2px);
+  vertical-align: -3px;
+  margin-right: 4px;
+}
+
+.user-box > span{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+/* =========================
+   MESSAGE ROW
+   ========================= */
+.message-row{
+  position: relative;
+  width: 95%;
+  margin-bottom: 10px;
+  padding-top: 32px;
+  padding-left: 37px;
+  padding-right: 37px;
+  overflow: visible;
+}
+
+/* =========================
+   MESSAGE BUBBLE
+   ========================= */
+.user-message{
+  font-size: {{fontSize}}px;
+  background: {{messagebackgroundColor}};
+  border-radius: 14px;
+  display: inline-block;
+
+  padding: 12px 14px;
+  padding-right: 42px;
+  padding-bottom: 26px;
+
+  max-width: 95%;
+  position: relative;
+  line-height: 1.25;
+
+  box-shadow:
+    0 6px 0 {{outlineColor}},
+    0 12px 18px rgba(0,0,0,0.25);
+}
+
+/* speech tail */
+.user-message::after{
+  content:"";
+  position:absolute;
+  left: 18px;
+  bottom: -10px;
+  width: 16px;
+  height: 16px;
+  background: {{messagebackgroundColor}};
+  transform: rotate(45deg);
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 {{outlineColor}};
+  z-index: 1;
+}
+
+/* keep content above tail */
+.user-message > :not(.corner-badge){
+  position: relative;
+  z-index: 2;
+}
+
+.action{
+  font-style: italic;
+}
+
+/* =========================
+   EMOTES
+   ========================= */
+.emote{
+  height: {{emoteSize}}px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* mixed text */
+.user-message.msg-mixed{
+  min-height: 44px;
+}
+
+/* emote-only */
+.user-message.msg-emotes-only .emote{
+  height: 96px;
+}
+
+/* many emotes */
+.user-message.msg-emotes-only.msg-emotes-many .emote{
+  height: 72px;
+}
+
+/* =========================
+   CORNER BADGE
+   ========================= */
+.corner-badge{
+  position: absolute;
+  right: -12px;
+  bottom: -10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: {{messagebackgroundColor}};
+  padding: 3px;
+  box-shadow:
+    0 4px 0 {{outlineColor}},
+    0 10px 18px rgba(0,0,0,0.35);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* =========================
+   IMAGE CARD SYSTEM
+   ========================= */
+:root{
+  --card-max-w: 360px;
+  --card-max-h: 270px;
+}
+
+.user-message.msg-image{
+  padding: 6px !important;
+  width: fit-content !important;
+  max-width: var(--card-max-w) !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* no tail on images */
+.user-message.msg-image::after{
+  content: none !important;
+}
+
+.user-message.msg-image .trigger-image{
+  display: block !important;
+  max-width: var(--card-max-w) !important;
+  max-height: var(--card-max-h) !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 12px !important;
+}
+
+/* =========================
+   SAFETY CLAMPS
+   ========================= */
+.user-message img:not(.emote):not(.trigger-image){
+  max-width: 100% !important;
+  height: auto !important;
+}
