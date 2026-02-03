@@ -34,6 +34,7 @@ function hasBadge(tags, badgeName) {
   return badges.split(",").some((b) => b.trim().startsWith(`${badgeName.toLowerCase()}/`));
 }
 
+// TODO: Re-evaluate permissions once chat volume increases
 function isAllowedToTrigger(data) {
   // --- Permission-based gating (disabled for now) ---
   /*
