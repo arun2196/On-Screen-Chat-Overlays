@@ -35,14 +35,22 @@ function hasBadge(tags, badgeName) {
 }
 
 function isAllowedToTrigger(data) {
+  // --- Permission-based gating (disabled for now) ---
+  /*
   const tags = data?.tags || {};
+  const badgesStr = String(tags.badges || "").toLowerCase();
 
-  const isBroadcaster = String(tags?.badges || "").toLowerCase().includes("broadcaster/");
-  const isSub = String(tags?.subscriber) === "1" || hasBadge(tags, "subscriber");
-  const isVip = hasBadge(tags, "vip");
+  const isBroadcaster = badgesStr.includes("broadcaster/");
+  const isMod = String(tags.mod) === "1" || badgesStr.includes("moderator/");
+  const isVip = badgesStr.includes("vip/");
+  const isSub =
+    String(tags.subscriber) === "1" || badgesStr.includes("subscriber/");
 
-  // return isBroadcaster || isMod || isVip || isSub;  // (mods+vip+subs)
-  return isBroadcaster || isVip || isSub;              // (vip+subs only)
+  return isBroadcaster || isMod || isVip || isSub;
+  */
+
+  // --- Current behavior: allow everyone ---
+  return true;
 }
 
 // ============================
