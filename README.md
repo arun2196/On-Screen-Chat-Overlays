@@ -17,24 +17,26 @@ StreamElements runs widgets inside its own environment and provides:
 
 Because of that:
 - the overlay **cannot be fully run or tested on its own**,
-- some parts of the JavaScript rely on StreamElements being present.
+- Some parts of the JavaScript rely on StreamElements being present.
 
 You *can* preview layout, styles, and animations locally, but **full behavior only works inside StreamElements**.
 
 ---
 
+
+
 ## Repository structure
 
+```text
 chat-overlay/
-├─ index.html # Overlay markup
-├─ style.css # Styling, layout, animations
-├─ app.js # Overlay logic (chat rendering, config, events)
-│
-├─ assets/ # Optional local assets (images, gifs, etc.)
-│
+├─ index.html        # Overlay markup
+├─ style.css         # Styling, layout, animations
+├─ app.js            # Overlay logic (chat rendering, config, events)
+├─ assets/           # Optional local assets (images, gifs, etc)
 └─ streamelements/
-├─ fields.json # Widget field definitions (settings UI in StreamElements)
-└─ data.json # Default / current widget values
+   ├─ fields.json    # Widget field definitions (StreamElements UI)
+   └─ data.json      # Default / current widget values
+```
 
 
 - `fields.json` defines which settings appear in the StreamElements widget UI.
